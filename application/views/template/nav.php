@@ -54,6 +54,25 @@
                                 </a>
                             </li>
                         <?php } else { ?>
+                            <li class="nav-item hs-has-sub-menu custom-nav-item">
+                                <a id="pagesMegaMenu" class="nav-link custom-nav-link main-link-toggle text-light" href="javascript:void(0);" aria-haspopup="true" aria-expanded="false" aria-labelledby="pagesSubMenu">Management User</a>
+
+                                <!-- Pages - Submenu -->
+                                <ul id="pagesSubMenu" class="hs-sub-menu main-sub-menu" aria-labelledby="pagesMegaMenu" style="min-width: 230px;">
+                                    <li class="nav-item submenu-item">
+                                        <a class="nav-link sub-menu-nav-link" href="<?= base_url() ?>admin/user">User</a>
+                                    </li>
+                                    <li class="hs-has-sub-menu">
+                                        <a id="navLinkPagesPricing" class="nav-link sub-menu-nav-link sub-link-toggle" href="javascript:void(0);" aria-haspopup="true" aria-expanded="false" aria-controls="navSubmenuPagesPricing">User Menu</a>
+
+                                        <ul id="navSubmenuPagesPricing" class="hs-sub-menu main-sub-menu" aria-labelledby="navLinkPagesPricing" style="min-width: 230px;">
+                                            <li><a class="nav-link sub-menu-nav-link" href="<?= base_url() ?>admin/daftar_menu">Daftar Menu</a></li>
+                                            <li><a class="nav-link sub-menu-nav-link" href="pricing-package.html">User Akses Menu</a></li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                                <!-- End Pages - Submenu -->
+                            </li>
                             <li class="nav-item custom-nav-item">
                                 <a class="nav-link custom-nav-link text-light" href="<?= base_url() ?>#informasi">Profil</a>
                             </li>
